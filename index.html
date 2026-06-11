@@ -4,8 +4,107 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>demo_003</title>
+    <title>Hemsara Website</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f4f4f4;
+        }
+
+        header {
+            background: #1e90ff;
+            color: white;
+            text-align: center;
+            padding: 30px;
+        }
+
+        nav {
+            background: #333;
+            padding: 15px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 15px;
+            font-size: 18px;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 60px 20px;
+        }
+
+        .hero h1 {
+            font-size: 50px;
+            color: #333;
+        }
+
+        .hero p {
+            font-size: 20px;
+            color: #666;
+        }
+
+        button {
+            background: #1e90ff;
+            color: white;
+            border: none;
+            padding: 15px 25px;
+            font-size: 18px;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #0066cc;
+        }
+
+        footer {
+            background: #222;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
+    </style>
 </head>
+
+<body>
+
+    <header>
+        <h1>Welcome to Hemsara's Website</h1>
+        <p>My First HTML Webpage</p>
+    </header>
+
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Gallery</a>
+        <a href="#">Contact</a>
+    </nav>
+
+    <section class="hero">
+        <h1>Hello Hemsara 👋</h1>
+        <p>This website was created using HTML & CSS.</p>
+
+        <button onclick="showMessage()">
+            Click Me
+        </button>
+    </section>
+
+
+    <script>
+        function showMessage() {
+            alert("Welcome to Hemsara's Website!");
+        }
+    </script>
+
+</body>
+
+</html>
 
 <body>
     <picture><img src="https://github.com/7oSkaaa/7oSkaaa/blob/main/Images/about_me.gif?raw=true" width=50px></picture>
@@ -27,7 +126,7 @@
 
 
 
-    <p style="text-align: center; font-size: 21px;"><b><i>Hemsara is an 18-year-old student from Sri Lanka</i></b> who
+    <p style="text-align: center; font-size: 21px;"><b><i>Hemsara is an 19-year-old student from Sri Lanka</i></b> who
         studies in the
         A/L Arts stream and has a strong interest in technology, learning, and future career opportunities. He has shown
         creativity and determination through different activities, including studying web design, programming concepts,
@@ -43,20 +142,20 @@
 
     </p><br>
     <hr>
-    <del>old Hemsara</del> <label for="name">Alder pesentage:</label>
+    <del>old Hemsara</del> <label for="name">Alter precentage:</label>
     <progress value="9" max="100">90%</progress>
     <br><br>
-    <label for="name">New pesentage:</label>
+    <label for="name">New precentage:</label>
     <progress value="90" max="100">90%</progress>
     <ins>new Hemsara</ins>
     <hr>
 
     <marquee direction="up" scrollamount="700">
-    <h1 style="text-align: center">
-        Hemsara<br>
-        is<br>
-        LEGAND OF SE<br>
-    </h1>
+        <h1 style="text-align: center">
+            Hemsara<br>
+            is<br>
+            LEGAND OF SE<br>
+        </h1>
     </marquee>
 
 
@@ -66,31 +165,32 @@
     </marquee>
 
     <fieldset><i>
-        <legend style="text-align: right">Personal Details</legend>
-        <form style="text-align: right">
-            <label style="font-size: 30px;" for="name">Name:</label>
-            <input type="text" id="name" placeholder="Enter You'r Name" name="Name" style="font-size: 30px;">
+            <legend style="text-align: right">Personal Details</legend>
+            <form style="text-align: right">
+                <label style="font-size: 30px;" for="name">Name:</label>
+                <input type="text" id="name" placeholder="Enter Your Name" name="Name" style="font-size: 30px;">
 
-            <label style="font-size: 30px;" for="email">Email:</label>
-            <input type="email" id="email" placeholder="Enter You'r Email" style="font-size: 30px;"><br><br>
+                <label style="font-size: 30px;" for="email">Email:</label>
+                <input type="email" id="email" placeholder="Enter Your Email" style="font-size: 30px;"><br><br>
 
-            <label style="font-size: 30px;" for="Password">Password:</label>
-            <input type="Password" id="password" placeholder="Enter You'r Password" style="font-size: 30px;">
+                <label style="font-size: 30px;" for="Password">Password:</label>
+                <input type="Password" id="password" placeholder="Enter Your Password" style="font-size: 30px;">
 
 
-            <label style="font-size: 30px;" for="contry">Contry:</label>
-            <select id="contry" name="contry" style="font-size: 30px;">
-                <option value="SL">Sri lanka</option>
-                <option value="US">United Stat</option>
-                <option value="JP">Japan</option>
-                <option value="UK">United KIndam</option>
-            </select><br><br>
+                <label style="font-size: 30px;" for="contry">Country:</label>
+                <select id="contry" name="contry" style="font-size: 30px;">
+                    <option value="SL">Sri lanka</option>
+                    <option value="US">United Stat</option>
+                    <option value="JP">Japan</option>
+                    <option value="UK">United KIndam</option>
+                </select><br><br>
 
-            <label style="font-size: 30px;" for="check" id="check">I Agree To The Terms And Condition</label>
-            <input type="checkbox" id="check" name="chesk" style="font-size: 30px;"><br><br>
+                <label style="font-size: 30px;" for="check" id="check">I Agree To The Terms And Condition</label>
+                <input type="checkbox" id="check" name="chesk" style="font-size: 30px;"><br><br>
 
-            <input style="font-size: 30px;" type="submit" value="Submit">
-        </form></i>
+                <input style="font-size: 30px;" type="submit" value="Submit">
+            </form>
+        </i>
     </fieldset><br><br>
 
 
@@ -102,6 +202,31 @@
 
     <abbr title="hemsara@gmail.com">
         <small>@hemsara.com</small></abbr>
+
+    <br><br>
+    <hr>
+
+
+    <details>
+        <summary>Hemsara</summary>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet laborum reiciendis vel tempore ab molestiae
+            accusamus cumque. Facere aliquam qui dolorem recusandae ipsa fugit ad? Vitae nisi temporibus, voluptates
+            aperiam itaque natus asperiores dolores quod fugit voluptas velit qui id ducimus aut corporis, ex,
+            perferendis veritatis quos impedit rem? Dignissimos, ipsam animi odio veniam, at earum ea veritatis
+            porro maxime optio labore, saepe nostrum quasi illum delectus qui ipsum illo?</p>
+
+    </details>
+
+
+    <details>
+        <summary>
+            My MOM
+        </summary>
+        <P>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime dicta natus eligendi reprehenderit omnis.
+            Pariatur, suscipit exercitationem! Quasi distinctio, dolor, praesentium facilis cupiditate commodi suscipit,
+            tempora hic quas incidunt eum.</P>
+    </details>
 </body>
 
 </html>
